@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban - SESI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <h1><span>SESI</span> Quadro Kanban - SESI</h1>
+            <p id="status-bar">Gerenciamento de Tarefas e Projetos</p>
+        </div>
+    </header>
+
+    <main class="kanban-container">
+        
+        <!-- Coluna 1: A Fazer -->
+        <section class="kanban-column" id="col-a-fazer">
+            <div class="column-header">
+                <h2>A Fazer</h2>
+                <span class="badge">2</span>
+            </div>
+            <div class="task-list">
+                <div class="task-card" draggable="true" id="task-1">
+                    <span class="tag tag-alta">Alta</span>
+                    <h3>Elaborar plano de aula</h3>
+                    <p>Módulo de robótica industrial para a turma B3.</p>
+                </div>
+                <div class="task-card" draggable="true" id="task-2">
+                    <span class="tag tag-media">Média</span>
+                    <h3>Organizar Feira SESI</h3>
+                    <p>Definir os estandes das equipes de Inovação.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coluna 2: Em Andamento -->
+        <section class="kanban-column" id="col-em-andamento">
+            <div class="column-header">
+                <h2>Em Andamento</h2>
+                <span class="badge">1</span>
+            </div>
+            <div class="task-list">
+                <div class="task-card" draggable="true" id="task-3">
+                    <span class="tag tag-urgente">Urgente</span>
+                    <h3>Manutenção do Laboratório</h3>
+                    <p>Verificação das impressoras 3D e corte a laser.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coluna 3: Em Revisão -->
+        <section class="kanban-column" id="col-em-revisao">
+            <div class="column-header">
+                <h2>Em Revisão</h2>
+                <span class="badge">1</span>
+            </div>
+            <div class="task-list">
+                <div class="task-card" draggable="true" id="task-4">
+                    <span class="tag tag-baixa">Baixa</span>
+                    <h3>Relatório de Frequência</h3>
+                    <p>Aguardando validação da coordenação pedagógica.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Coluna 4: Concluído -->
+        <section class="kanban-column" id="col-concluido">
+            <div class="column-header">
+                <h2>Concluído</h2>
+                <span class="badge">1</span>
+            </div>
+            <div class="task-list">
+                <div class="task-card" draggable="true" id="task-5">
+                    <span class="tag tag-concluido">Finalizado</span>
+                    <h3>Treinamento de Brigada</h3>
+                    <p>Capacitação realizada com a equipe de ensino.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
